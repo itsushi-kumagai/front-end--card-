@@ -1,0 +1,15 @@
+@import "./variables";
+@import "./layout";
+@import "./components";
+@import "./profile";
+@import "./card";
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    background-color: black;
+}
+

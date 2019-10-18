@@ -1,0 +1,488 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link href="https://use.fontawesome.com/releases/v5.6.1/css/all.css" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Lato&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="./css/main.css">
+    <!-- <link rel="stylesheet" href="https://unpkg.com/swiper/css/swiper.css">
+    <link rel="stylesheet" href="./css/swiper.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/flatpickr/dist/flatpickr.min.css"> -->
+    <title>landing page</title>
+</head>
+<body>
+    <div class="container" id="app">
+        <section id="header-container">
+        <div id="header" >
+                <a href="#"><h1 class="logo">Dark Code</h1></a>
+                    <input type="checkbox" id="chk">
+                    <label for="chk" class="show-menu-btn">
+                        <i class="fas fa-bars" style="color: white;"></i>
+                    </label>        
+                    <ul class="menu">
+                    <div class="menu-list">
+                        <a href="#">Register</a>
+                        <a href="#">Events</a>
+                        <a href="#">Login</a>
+                        <label for="chk" class="hide-menu-btn">
+                            <i class="fas fa-times" style="color: white;"></i>
+                        </label>
+                    </div>
+                </ul> 
+        </div>
+        </section>
+
+
+               
+        <div class="header2">
+            <input type="checkbox" class="openSidebarMenu" id="openSidebarMenu">
+            <label for="openSidebarMenu" class="sidebarIconToggle">
+              <div class="spinner diagonal part-1"></div>
+              <div class="spinner horizontal"></div>
+              <div class="spinner diagonal part-2"></div>
+            </label>
+          <div id="sidebarMenu">
+            <ul class="sidebarMenuInner">
+              <li><a href="#" target="_blank">Home</a></li>
+              <li><a href="#" target="_blank">Events</a></li>
+              <li><a href="#" target="_blank">Profile</a></li>
+              <li><a href="#" target="_blank">Log out</a></li>
+            </ul>
+          </div>
+        
+        
+        
+        
+          <input type="checkbox" class="openSidebarSearch" id="openSidebarSearch">
+          <label for="openSidebarSearch" class="sidebarIconSearch">
+            <i class="fas fa-search search_icon"></i>
+          </label>
+        
+                <div id="sidebarSearch">
+                  <div class="search-erea">
+                    <div class="search-title">Enter the name of event</div>
+                      <input type="text" class="search_text">
+                      <div class="search-title">Choose tags</div>
+                      <ul class="tag-list">
+                        <li>Tag</li>
+                        <li>Tag</li>
+                        <li>Tag</li>
+                        <li>Tag</li>
+                      </ul>
+                      <ul class="tag-list">
+                        <li>Tag</li>
+                        <li>Tag</li>
+                        <li>Tag</li>
+                        <li>Tag</li>
+                      </ul> 
+                    </div>
+        
+                    <div class="search-erea">
+                      <div class="search-title">Categories</div>
+                      <div class="Category-list">
+                        <dl class="Category">
+                          <dt><img src="./image/martini.png" alt="bar-img"></dt>
+                          <dd>bar</dd>
+                        </dl>
+                        <dl class="Category">
+                          <dt><img src="./image/beer.png" alt="pub-img"></dt>
+                          <dd>pub</dd>
+                        </dl>
+                        <dl class="Category">
+                          <dt><img src="./image/dj.png" alt="club-img"></dt>
+                          <dd>club</dd>
+                        </dl>
+                      </div>
+                    </div>
+        
+                    <div class="search-erea">
+                      <div class="search-title">Day</div>
+                      <input type="text" class="Day-box">
+                    </div>
+        
+                </div>
+        
+              </div>
+            
+        <div class="background-img">  
+            <div class="main_search">
+                <div class="search_content">
+                    <form action="#" class="search">
+                    <input type="text" class="search_text" placeholder="Enter the key words !">
+                    <select name="select" id="select" class="Genre">
+                            <option value="" hidden">genre</option>
+                            <option value="1">bar</option>
+                            <option value="2">pub</option>
+                            <option value="3">club</option>
+                    </select>
+                    <input type="text" class="search_date" id="date-box">
+                    <button type="submit" class="test">
+                        <i class="fas fa-search search_icon"></i>
+                    </button>
+                </div>
+            </div>
+        </div>
+
+
+     
+        <section>
+                <h2>Featured Events</h2>
+                <div class="swiper-container">
+                <div class="swiper-wrapper">
+                    <div class="swiper-slide">
+                        <div class="image">
+                            <img src="../image/image2.jpg" alt="" width="300px" height="200px">
+                        </div>
+                        <div class="card-information">
+                                <div class="event-name">
+                                    live in Odaiba
+                                </div>
+                                <div class="heart">
+                                    <i class="fas fa-heart fa-lg" style="color: #F70661"></i>
+                                </div>
+                            
+                            <div class="event-date">
+                                2019.8.23
+                            </div>
+                            <div class="card-info">
+                                <p>Lorem ipsum dolor sit amet in  dfgasd</p>
+                                <a href="#" style="color: white">...see more</a>
+                            </div>
+                        </div>    
+                    </div>
+                    <div class="swiper-slide">
+                        <div class="image">
+                            <a href="#">
+                            <img src="../image/image6.jpg" alt="" width="300px" height="200px">
+                            </a>
+                            <div class="card-information">
+                                    <div class="event-name">
+                                        <a href="#">
+                                        live in Odaiba
+                                        </a>
+                                    </div>
+                                    <div class="heart">
+                                        <i class="fas fa-heart fa-lg" style="color: #F70661"></i>
+                                    </div>
+                                <div class="event-date">
+                                    2019.8.23
+                                </div>
+                                <div class="card-info">
+                                    Lorem ipsum dolor sit amet in laboriosam 
+                                    <a href="#" style="color: white">...see more</a>
+                                </div>
+                            </div>    
+                        </div>
+                    </div>
+                    <div class="swiper-slide">
+                        <div class="image">
+                            <img src="../image/image7.jpg" alt="" width="300px" height="200px">
+                        </div>
+                        <div class="card-information">
+                                <div class="event-name">
+                                    live in Odaiba
+                                </div>
+                                <div class="heart">
+                                    <i class="fas fa-heart fa-lg" style="color: #F70661"></i>
+                                </div>
+                            
+                            <div class="event-date">
+                                2019.8.23
+                            </div>
+                            <div class="card-info">
+                                <p>Lorem ipsum dolor sit amet in Lorem, ipsum dolor</p>
+                                
+                                <a href="#" style="color: white">...see more</a>
+                            </div>
+                        </div>    
+                    </div>
+                    <div class="swiper-slide">
+                        <div class="image">
+                            <img src="../image/image6.jpg" alt="" width="300px" height="200px">
+                        </div>
+                        <div class="card-information">
+                                <div class="event-name">
+                                    live in Odaiba
+                                </div>
+                                <div class="heart">
+                                    <i class="fas fa-heart fa-lg" style="color: #F70661"></i>
+                                </div>
+                            
+                            <div class="event-date">
+                                2019.8.23
+                            </div>
+                            <div class="card-info">
+                                <p>Lorem ipsum dolor sit amet in Lorem, ipsum dolor</p>
+                                
+                                <a href="#" style="color: white">...see more</a>
+                            </div>
+                        </div>    
+                    </div>
+                <div class="swiper-slide">
+                    <div class="image">
+                        <img src="../image/image2.jpg" alt="" width="300px" height="200px">
+                    </div>
+                    <div class="card-information">
+                            <div class="event-name">
+                                live in Odaiba
+                            </div>
+                            <div class="heart">
+                                <i class="fas fa-heart fa-lg" style="color: #F70661"></i>
+                            </div>
+                        
+                        <div class="event-date">
+                            2019.8.23
+                        </div>
+                        <div class="card-info">
+                            <p>Lorem ipsum dolor sit amet in Lorem, ipsum dolor</p>
+                            
+                            <a href="#" style="color: white">...see more</a>
+                        </div>
+                    </div>    
+                </div>
+                <div class="swiper-slide">
+                    <div class="image">
+                        <img src="../image/image5.jpg" alt="" width="300px" height="200px">
+                    </div>
+                    <div class="card-information">
+                            <div class="event-name">
+                                live in Odaiba
+                            </div>
+                            <div class="heart">
+                                <i class="fas fa-heart fa-lg" style="color: #F70661"></i>
+                            </div>
+                        
+                        <div class="event-date">
+                            2019.8.23
+                        </div>
+                        <div class="card-info">
+                            <p>Lorem ipsum dolor sit amet in Lorem, ipsum dolor</p>
+                            
+                            <a href="#" style="color: white">...see more</a>
+                        </div>
+                    </div>    
+                </div>
+                <div class="swiper-slide">
+                    <div class="image">
+                        <img src="../image/image2.jpg" alt="" width="300px" height="200px">
+                    </div>
+                    <div class="card-information">
+                            <div class="event-name">
+                                live in Odaiba
+                            </div>
+                            <div class="heart">
+                                <i class="fas fa-heart fa-lg" style="color: #F70661"></i>
+                            </div>
+                        
+                        <div class="event-date">
+                            2019.8.23
+                        </div>
+                        <div class="card-info">
+                            <p>Lorem ipsum dolor sit amet in Lorem, ipsum dolor</p>
+                            
+                            <a href="#" style="color: white">...see more</a>
+                        </div>
+                    </div>    
+                </div>
+                <div class="swiper-slide">
+                        <div class="image">
+                            <img src="../image/image6.jpg" alt="" width="300px" height="200px">
+                        </div>
+                        <div class="card-information">
+                                <div class="event-name">
+                                    live in Odaiba
+                                </div>
+                                <div class="heart">
+                                    <i class="fas fa-heart fa-lg" style="color: #F70661"></i>
+                                </div>
+                            
+                            <div class="event-date">
+                                2019.8.23
+                            </div>
+                            <div class="card-info">
+                                <p>Lorem ipsum dolor sit amet in Lorem, ipsum dolor</p>
+                                
+                                <a href="#" style="color: white">...see more</a>
+                            </div>
+                        </div>    
+                    </div>
+                </div>
+                <div class="swiper-button-prev"></div>
+                <div class="swiper-button-next"></div>
+
+            </div>
+                <div class="seemore-btn">
+                    <a href="#">See more</a>
+                </div>
+    </section>
+    <section>
+        <div class="category-container">
+            <h2>CATEGORY</h2>
+            <div class="category-card">
+                <div class="category-card-content">
+                    <div class="category-image">
+                        <a href="#"><img src="./LPImages/q-u-i-Zrp9b3PMIy8-unsplash.jpg" alt="Bar-image"></a>
+                    </div>
+                    <p>Bar</p>
+                </div>
+                <div class="category-card-content">
+                    <div class="category-image">
+                        <a href="#"><img src="./LPImages/patrick-tomasso-GXXYkSwndP4-unsplash.jpg" alt="Pub-image"></a>     
+                    </div> 
+                    <p>Pub</p>
+                </div>
+                <div class="category-card-content">
+                    <div class="category-image"><a href="#"><img src="./LPImages/pablo-heimplatz-ZODcBkEohk8-unsplash.jpg" alt="Club-image"></a>  
+                    </div>
+                    <p>Club</p>
+                </div>
+            </div>
+        </div>
+    </section>
+    
+        <section>
+            <h2>HOW TO USE</h2>
+            <div class="contents">
+                <div class="use_contents">        
+                        <img src="./LPImages/phone image 1@2x.png" alt="phone1">
+                    <div class="Description">
+                        <h3>register</h3>
+                        <p>register or login to use it more comfortably.</p>
+                        <div class="register-btn">
+                            <a href="#">Register</a>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="use_contents use_contents2">           
+                    <div class="Description" style="align-items: center;">
+                        <h3>Create a profile</h3>
+                        <p>make your profile and let peopleknow who you are.</p>
+                    </div>
+                    <img src="./LPImages/phone image 2@2x.png" alt="phone2">
+                </div>
+
+                <div class="use_contents">        
+                    <img src="./LPImages/phone image 3@2x.png" alt="phone1">
+                        <div class="Description">
+                            <h3>Find events</h3>
+                            <h4><span style="color: #F70661">●</span> Save function</h4>
+                                <div class="phone-3">
+                                        <p>You can use the save function. 
+                                        Save and stock events of interest</p>
+                                </div> 
+                            <h4><span style="color: #F70661">●</span> Show recommendations</h4>
+                                <div class="phone-3">
+                                    <p>We can introduce recommended 
+                                        events tailored to you</p>
+                                </div>        
+                        </div> 
+                </div>
+
+                <div class="use_contents use_contents2">
+                        <div class="Description">
+                            <h3>Alternating current</h3>
+                            <p>Chat about events with
+                            many other users using 
+                            the chat feature.</p>
+                        </div>
+                        <img src="./LPImages/phone image 4@2x.png" alt="phone2">
+                </div>
+            </div>   
+                
+                <div class="start">
+                    <h3>Let's start</h3>
+                    <div class="register-btn">
+                            <a href="#">Register</a>
+                    </div>
+                </div>
+        </section>
+        <section>
+            <div class="login">
+                    <div class="login-contents">
+                        <div class="login-base">
+                            <h2>Login</h2>                            
+                            
+                            <div class="sns-icon-erea">
+                                <div class="sns-icon face"><i class="fab fa-facebook-f"></i></div>
+                                <div class="sns-icon twi"><i class="fab fa-twitter"></i></div>
+                                <div class="sns-icon goo"><i class="fab fa-google"></i></div>
+                            </div>
+                            <div class="login-erea">
+                                    <p>E-mail adress</p>
+                                    <input class="login-box" type="text" name="txt" placeholder="">
+                                    <p>Password</p>
+                                    <input class="login-box" type="text" name="txt" placeholder="">
+                            </div>
+
+                            <div class="login-link">
+                                <a href="#">
+                                    login
+                                </a>
+                            </div>
+                            <div class="forgot">
+                                <a href="#" class="forget">
+                                    Forgot Password ?
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+            </div>
+        </section>
+        </div>
+        <footer>
+            <div class="footer"></div>
+        </footer>
+     
+        
+        
+      
+
+    
+
+    
+<!-- <script src="https://unpkg.com/swiper/js/swiper.js"></script>
+<script src="https://unpkg.com/swiper/js/swiper.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/flatpickr"></script>
+<link rel="stylesheet" href="{{ asset('/js/swiper.min.js') }}">
+<script>
+    var mySwiper = new Swiper ('.swiper-container', {
+        // Optional parameters
+        direction: 'horizontal',
+        slidesPerView: 4,
+        spaceBetween: 10,
+        centeredSlides : true,
+        loop: true,
+    
+        // Navigation arrows
+        navigation: {
+        nextEl: '.swiper-button-next',
+        prevEl: '.swiper-button-prev',
+        },
+    
+    })
+
+    flatpickr("#date", {
+        minDate: "today"
+    });
+
+    flatpickr("#date-box", {
+        minDate: "today"
+    });
+
+    var prevScrollpos = window.pageYOffset;
+        window.onscroll = function() {
+            var currentScrollpos = window.pageYOffset;
+            if(prevScrollpos > currentScrollpos){
+                document.getElementById("header").style.top = "0";
+            } else {
+                document.getElementById("header").style.top = "-1000px";
+            }
+
+            prevScrollpos = currentScrollpos;
+        }
+</script>-->
+</body>
+</html> 

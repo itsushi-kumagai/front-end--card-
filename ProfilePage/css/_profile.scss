@@ -1,0 +1,222 @@
+@mixin button-decoration {
+    color: white;
+    margin-top: 10px;
+    border-radius: 30px;
+    
+    font-size: 17px;
+    border:0;
+    cursor: pointer;
+}
+
+@mixin select {
+    margin-top: 15px;
+    margin-bottom: 30px;
+    margin-left: 26px;
+    border: none;
+}
+
+
+@mixin select-effect {
+    background-color: white;
+    background: none;
+    color: rgb(51, 51, 51);
+    font-size: 15px;
+    height: 30px;
+    width: 40%;
+    border: none;
+    background-color: white;
+    cursor: pointer;
+}
+
+
+.profile {
+    width: 800px;
+    height: 250px;
+    background-image: url("../image/image1.jpg");
+    background-size: 100% auto;
+    background-repeat: no-repeat;
+    background-position: center;
+    margin: 0 auto;
+}
+
+.person {
+    margin: 0 auto;
+    width: 130px;
+    height: 130px;
+    border: 2px solid white;
+    background-color: black;
+    border-radius: 50%;
+    object-fit: cover;
+    margin-top: -4rem;
+    margin-bottom: 30px;
+    img {
+        width: 130px;
+        height: 130px;
+        border-radius: 50%;
+        object-fit: cover;
+        
+    }
+}
+
+
+
+.userinfo {
+    border-bottom: 0.2px solid rgb(61, 61, 61);
+}
+
+
+.edit-image {
+    font-size: 8px;
+    text-align: center;
+    a {
+        text-decoration: none;
+    }
+}
+
+
+
+.editBtn {
+    @include button-decoration();
+    width: 130px;
+    background-color: $saveBtn;
+    padding: 5px;
+    &:focus {
+        outline: none;
+    }
+    a {
+        text-decoration: none;
+        color: white;
+    }
+}
+
+.information {
+    margin-top: 5rem;
+    margin: 80px auto;
+    font-size: 18px;
+    list-style: none;
+    width: 50%;
+    p {
+        color: white;
+        font-size: 17px;
+        letter-spacing: 1px;
+        height: 30px;
+        margin-top: 10px;
+        border-bottom: 1px solid white;
+    }
+
+    input {
+        color: white;
+        font-size: 18px;
+        letter-spacing: 1px;
+        border: none;
+        width: 30rem;
+        height: 30px;
+        margin-top: 10px;
+        margin-left: 30px;
+        background-color: black;
+        border-bottom: 1px solid white;
+        &:focus {
+            outline: none;
+        }
+    }
+   
+
+
+    textarea {
+        background-color: black;
+        color: white;
+        font-size: 16px;
+        letter-spacing: 1px;
+        margin-top: 30px;
+        margin-left: 30px;
+        &:focus {
+            outline: none;
+        }
+    }
+
+}
+
+.description {
+    margin: 4rem auto;
+    color: white;
+    font-size: 15px;
+    letter-spacing: 1px;
+    width: 50%;
+    height: 30px;
+    margin-top: 10px;
+    p{
+        margin-top: 15px;
+        margin-left: 1rem;
+        letter-spacing: 1px;
+    }
+}
+
+.user-description{
+    margin-bottom: 30px;
+    font-size: 19px;
+    letter-spacing: 2px;
+}
+
+
+.gender {
+    @include select();
+    select {
+        @include select-effect();
+    }
+}
+
+.country {
+    @include select();
+    select {
+        @include select-effect();
+    }
+}
+
+
+.card-wrapper {
+    margin-left: 40rem;
+}
+
+.saveBtn {
+    @include button-decoration();
+    width: 80px;
+    background-color: $saveBtn;
+    padding: 5px;
+    float: right;
+    margin: 3rem 0;
+    &:focus {
+        outline: none;
+    }
+    a {
+        text-decoration: none;
+        color: white;
+    }
+}
+
+
+@media screen and (max-width:800px) {
+
+.information{
+    width: 75%;
+}
+.profile{
+    height: 200px;
+    width: 100%;
+}
+.description{
+    width: 75%;
+}
+.userinfo {
+    width: 90%;
+}
+
+.person {
+    width: 110px;
+    height: 110px;
+
+    img {
+        width: 110px;
+        height: 110px;    
+    }
+}
+}

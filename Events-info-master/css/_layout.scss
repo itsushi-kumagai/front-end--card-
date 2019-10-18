@@ -1,0 +1,49 @@
+#header-container {
+    position: fixed;
+    width: 100%;
+    font-family: 'Lato', sans-serif;
+}
+
+.content {
+    width: 47rem;
+    color: white;
+    overflow: hidden;
+    margin: 0 auto;
+    img {
+        margin-top: 5rem;
+    }
+}
+
+
+
+.detail {
+    width: 47rem;
+    p { 
+        color: rgb(141, 139, 139);
+        margin: 30px 0 30px 20px ;
+        font-size: 17px;
+    }
+}
+
+.comments {
+    width: 47rem;
+    margin-left: 20px;
+    border-top: solid  gray 1px;
+    display: flex;
+}
+
+.user-comments {
+    margin-top: -10rem;
+}
+
+.user-comment {
+    display: flex;
+    padding-top: 20px;
+    margin-left: 20px;
+}
+
+.footer {
+    margin-top: 10rem;
+    height: 40vh;
+    background-color: #2D2524;
+}

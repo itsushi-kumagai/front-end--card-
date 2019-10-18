@@ -1,0 +1,97 @@
+@mixin button-decoration {
+    color: white;
+    margin-top: 10px;
+    border-radius: 30px;
+    font-size: 24px;
+    padding: 4px 20px 4px 20px;
+    border:0;
+    cursor: pointer;
+}
+
+
+
+
+.use_contents{
+    display: flex;    
+    justify-content: center;
+    align-items: center;
+
+
+    img{
+
+        margin-right: 7rem;
+        width: 20%;
+    }
+}
+
+
+
+.Description{
+    text-align: center;
+    width: 30%;
+    p{  
+        text-align: center;
+        font-size: 19px;
+        margin-top: 0.5rem;
+        color: #c7c7c7;
+    }
+}
+
+.register-btn { margin-top: 4rem;
+    a{
+       
+        background-color: #F70661;
+        text-decoration: none;
+        @include button-decoration();
+    }
+}
+
+.find_func {
+    margin: 1rem;
+}
+
+
+.use_contents2{
+    img{
+        margin-left: 7rem;
+        margin-right: 0;
+    }
+ 
+}
+
+.start{
+    margin: 4rem 0 10rem;
+    text-align: center;
+}
+
+.right{
+    display: flex;    
+    align-items: center;
+    margin: 0 0 0 auto;
+}
+
+@media screen and (max-width:800px) {
+
+    .use_contents{
+        padding: 20px;
+        img{
+           margin-right: 1rem;
+            width: 40%;
+        }
+    }
+
+    .use_contents2{
+        margin-left: 0;
+        img{
+            margin-right: 0;
+            margin-left: 1rem;
+        }  
+    }   
+    
+    .Description{
+        width: 100%;
+    }
+    h4{
+        margin: 0;
+    }
+}

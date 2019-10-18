@@ -1,0 +1,6 @@
+flatpickr("#date", {
+    minDate: "today"
+});
+
+
+

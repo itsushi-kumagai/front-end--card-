@@ -1,0 +1,97 @@
+
+.image {
+    img {
+        border: 1px solid white;
+    }
+}
+
+.event-name {
+    font-size: 20px;
+    color: white;
+}
+
+.heart {
+    margin-top: -20px;
+    margin-left: 17rem;
+}
+
+.event-date {
+    font-size: 20px;
+    color: #FD8700;
+}
+
+.card-info {
+    color: white;
+    font-size: 18px;
+}
+.save-mark {
+    display: flex;
+}
+
+.button {
+    display: flex;
+    width: 300px;
+    margin-left: 120px;
+}
+.seemore-btn{
+    margin-top: 4rem;
+    align-items: center;
+    justify-content: center;
+    display: flex;
+
+    a{
+    color: white;
+    border-radius: 30px;
+    font-size: 24px;
+    padding: 4px 20px 4px 20px;
+    border:0;
+    cursor: pointer;
+    text-decoration: none;
+    background: #7206F7;
+    }
+ 
+}
+
+
+
+
+
+
+
+
+.swiper-wrapper {
+    display: flex;
+}
+.swiper-slide{
+    margin: 0 20px;
+}
+
+
+
+
+@media screen and (max-width:800px) {
+
+    .swiper-slide{
+        width: 240px;
+    }
+    .image{
+        img{
+            width: 240px;
+            height: 158px;
+        }
+    }
+    .heart{
+        margin-left: 0;
+       float: right;
+    }
+
+
+
+
+}
+
+
+
+
+
+

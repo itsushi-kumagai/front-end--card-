@@ -1,0 +1,26 @@
+@import "./layout";
+@import "./components";
+@import "./info";
+@import "./comments";
+@import "./card";
+@import "./variables";
+
+
+* {
+    
+    margin: 0;
+    padding: 0;
+}
+
+
+
+body {
+    background-color: black;
+    font-family: 'Nuito';
+}
+
+a {
+    text-decoration: none;
+    color: white;
+    border-bottom: 0.5px grey solid;
+}
